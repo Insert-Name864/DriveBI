@@ -18,7 +18,7 @@ Le rapport Power BI est organisé autour de trois niveaux d'analyse.
 
 Vue synthétique de l'activité du réseau permettant d'identifier rapidement la tendance générale et les magasins les plus contributeurs.
 
-![Vue d'ensemble](documents/activite_globale.jpg)
+![Vue d'ensemble](documents/activite_globale.JPG)
 
 Principaux éléments :
 
