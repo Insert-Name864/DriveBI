@@ -1,0 +1,11 @@
+name: DriveBI-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytest
+  - pandas
+  - psycopg2
+  - sqlalchemy
+  - spyder
+  - pip

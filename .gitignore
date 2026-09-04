@@ -1,0 +1,109 @@
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache pytest
+.pytest_cache/
+
+# Couverture de tests
+.coverage
+.coverage.*
+htmlcov/
+
+
+# ============================================================
+# ENVIRONNEMENTS PYTHON LOCAUX
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+
+# ============================================================
+# VARIABLES D'ENVIRONNEMENT / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+
+# ============================================================
+# DONNEES GENEREES
+# ============================================================
+
+# Les données du projet sont générées par Python :
+# elles n'ont pas besoin d'être versionnées.
+data/**/*.csv
+
+# Conserver éventuellement les dossiers vides dans Git
+!data/**/.gitkeep
+
+
+# ============================================================
+# POSTGRESQL / SAUVEGARDES
+# ============================================================
+
+*.dump
+*.backup
+*.sql.gz
+
+
+# ============================================================
+# POWER BI - FICHIERS TEMPORAIRES
+# ============================================================
+
+# Conserver les vrais fichiers .pbix / .pbit du projet
+# mais ignorer les fichiers temporaires ou de verrouillage.
+~$*.pbix
+~$*.pbit
+*.tmp
+*.temp
+
+
+# ============================================================
+# IDE / EDITEURS
+# ============================================================
+
+.vscode/
+.idea/
+
+# Spyder
+.spyproject/
+.spyderproject
+.spyderworkspace
+
+# Fichiers temporaires d'éditeurs
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# WINDOWS / MACOS
+# ============================================================
+
+Thumbs.db
+desktop.ini
+.DS_Store
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+
+
+# ============================================================
+# SAUVEGARDES
+# ============================================================
+
+*.bak

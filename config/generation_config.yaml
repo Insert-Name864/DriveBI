@@ -1,0 +1,122 @@
+
+seed: 42
+
+periode:
+  date_debut: "2024-01-01"
+  date_fin: "2025-12-31"
+
+volumetrie:
+  nombre_magasins: 30
+  objectif_commandes: 100000
+
+magasins:
+  regions:
+    valeurs:
+      - "ILE_DE_FRANCE"
+      - "AUVERGNE-RHONE-ALPES"
+      - "BOURGOGNE-FRANCHE-COMTE"
+    probabilites:
+      - 0.4
+      - 0.3
+      - 0.3
+
+  zones_geographiques:
+    valeurs:
+      - "urbain"
+      - "périurbain"
+      - "rural"
+    probabilites:
+      - 0.5
+      - 0.3
+      - 0.2
+
+  type_service:
+    - "mixte"
+    - "retrait_drive"
+    - "livraison_domicile"
+
+  capacite_journaliere:
+    minimum: 150
+    maximum: 250
+
+  indice_efficacite:
+    minimum: 0.7
+    maximum: 1.3
+
+creneaux:
+  duree_minutes: 60
+  premier_creneau: "09:00"
+  dernier_creneau: "20:00"
+  delai_minimum_commande_minutes: 120
+  horizon_maximum_jours: 3
+
+commandes:
+  taux_retrait_drive: 0.80
+  taux_livraison: 0.20
+
+  heure_commande_minimum: "06:00"
+  heure_commande_maximum: "22:00"
+
+  taux_annulation: 0.025
+  taux_non_recuperee: 0.010
+
+paniers:
+  nombre_articles_minimum: 1
+  nombre_articles_moyen: 22
+  nombre_articles_maximum: 80
+
+  montant_minimum: 5.00
+  montant_maximum: 350.00
+
+  distribution_mathematique:
+    mean: 1.1
+    sigma: 0.45
+
+preparation:
+  temps_fixe_minutes: 5
+  secondes_par_article: 45
+  variabilite: 0.20
+
+  marge_avant_creneau:
+    minimale: 15
+    maximale: 120
+
+  delai_avant_preparation:
+    minimum: 5
+    maximum: 30
+
+qualite_preparation:
+  taux_commande_avec_manquant: 0.08
+  taux_article_manquant: 0.015
+  taux_substitution_si_manquant: 0.65
+
+ponctualite:
+  taux_base_a_heure: 0.90
+  retard_moyen_minutes: 22
+  retard_maximum_minutes: 180
+
+incidents:
+  taux_base: 0.10
+  nombre_max_par_commande: 3
+
+  types:
+    article_manquant: 0.25
+    retard_preparation: 0.22
+    retard_livraison: 0.15
+    erreur_commande: 0.10
+    panne_application: 0.08
+    panne_terminal: 0.05
+    probleme_paiement: 0.05
+    client_absent: 0.07
+    colis_endommage: 0.03
+
+qualite_donnees:
+  taux_doublons: 0.002
+  taux_valeurs_nulles: 0.004
+  taux_dates_incoherentes: 0.001
+  taux_quantites_incoherentes: 0.001
+
+exports:
+  separateur_csv: ";"
+  encodage: "utf-8"
+  format_datetime: "%Y-%m-%d %H:%M:%S"
