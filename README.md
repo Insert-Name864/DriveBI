@@ -36,7 +36,7 @@ Principaux éléments :
 
 Vue dédiée à l'analyse d'un magasin sélectionné.
 
-![Activité magasin](documents/activite_magasin.jpg)
+![Activité magasin](documents/activite_magasin.JPG)
 
 Elle permet notamment de suivre :
 
